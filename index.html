@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo de Consumo</title>
+
+    <!--css do bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--css custom-->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Consumer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container2">
+            <h1>Comparativo de Consumo</h1>
+        </div>
+
+        <div class="container" style="max-width: 80%;">
+            <p>Consumo: <span id="pct3">0</span></p>
+
+            <p style="margin-bottom: -17%;">Carro Eletrico</p>
+
+            <div id="imagem">
+                <img id="img1" src="js/carro_right.png" style="margin-bottom: -40%;">
+            </div>
+
+            <div id="myProgress">
+                <div id="myBar"></div>
+            </div>
+
+        </div>
+
+        </br>
+        <div class="container" style="max-width: 80%;">
+            <div id="imagem2">
+                <p>Consumo: <span id="pct2">0</span></p>
+
+                <p>Carro a Gasolina</p>
+
+                <img id="img2" src="js/carro_right.png">
+            </div>
+
+            <div id="myProgress2">
+                <div id="myBar2"></div>
+            </div>
+        </div>
+
+        <div class="container align-middle" style="text-align:center;">
+            <button data-toggle="button" id="bt" class="btn btn-primary" onclick="move()">Comecar</button>
+        </div>
+    </div>
+
+    <div class="container align-middle">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Carros comparados</h1>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-lg-2 col-sm-1"></div>
+            <div class="col-lg-4 col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/golf.jpg" alt="golf tsi">
+                    <div class="card-body">
+                        <h5 class="card-title">Golf TSI</h5>
+                        <p class="card-text">Motor a Combustao.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Gasolina</li>
+                        <li class="list-group-item">150cv</li>
+                        <li class="list-group-item">8km/L</li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/gte.jpg" alt="golf gte">
+                    <div class="card-body">
+                        <h5 class="card-title">Golf Gte</h5>
+                        <p class="card-text">Motor Eletrico.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Energia</li>
+                        <li class="list-group-item">102cv</li>
+                        <li class="list-group-item">+50km/L</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-1"></div>
+        </div>
+    </div>
+
+    <div class="container5">
+        <div class="row">
+            <div class="col-lg-12" style="margin-top: 3%;">
+                <h1>Como e feito o calculo</h1>
+            </div>
+        </div>
+
+        </br>
+        <div clas="row">
+            <div class="col-lg-12">
+                <div id="accordion">
+
+                    <div class="card mb-0">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Informacoes da Gasolina
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <strong>Consumo de gasolina</strong> = 10L/100 km (dez litros para cem quilômetros) = 10
+                                km/l;
+                                </br>
+                                <strong> Preço da gasolina</strong> = R$ 5,00;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-3">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Informacoes da Energia Eletrica
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse mb-2" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <strong>Consumo de eletricidade</strong> = 20 kWh/100 km;
+                            </br>
+                            <strong>Preço do kWh</strong> = R$ 0,50.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-bottom: 8%;">
+            <ul class="list-group">
+                <li class="list-group-item">Passo para fazer o calculo</li>
+              
+                
+                <li class="list-group-item list-group-item-info">Para o carro a gasolina percorrer cem quilômetros, a despesa é de R$ 50,00 (10 litros x R$ 5,00);</li>
+                <li class="list-group-item list-group-item-info">Para o modelo elétrico rodar a mesma distância, o valor fica em R$ 10,00 (20 kWh x R$ 0,50)</li>
+                <li class="list-group-item list-group-item-info">Quantos litros de gasolina se compra com R$ 10,00? R$ 10,00/ R$ 5/litro de gasolina = 2 litros;</li>
+                <li class="list-group-item list-group-item-info">Isso significa que o veículo elétrico gastaria 2 litros de gasolina para percorrer cem quilômetros, gastando em eletricidade o valor equivalente em gasolina;</li>
+                <li class="list-group-item list-group-item-info">Finalmente, dividimos 100 quilômetros por 2 litros e obtemos o valor de 50 quilômetros por litro equivalente (km/le).;</li>
+              </ul>
+            </div>
+        
+
+    </div>
+
+    
+
+
+</body>
+<!-- <div class="container align-middle" style="margin-top: 25%;">
+        <button>Começar comparativo</button>
+    </div> -->
+<!--js/jquery bootstrap-->
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+    $("#bt").click(function () {
+        var numero = document.getElementById('pct3');
+        var min = 1;
+        var max = 10;
+        var duração = 10000; // 5 segundos
+
+        for (var i = min; i <= max; i++) {
+            setTimeout(function (nr) {
+                numero.innerHTML = nr + "R$";
+            }, i * 10000 / max, i);
+        }
+    });
+
+    //   $("#voltarValor").click(function() {
+    //     $("#numero").text("1");
+    //   });
+    $("#bt").click(function () {
+        var numero = document.getElementById('pct2');
+        var min = 1;
+        var max = 50;
+        var duração = 10000; // 5 segundos
+
+        for (var i = min; i <= max; i++) {
+            setTimeout(function (nr) {
+                numero.innerHTML = nr + "R$";
+            }, i * 10000 / max, i);
+        }
+    });
+
+    $("#voltarValor").click(function () {
+        $("#numero").text("1");
+    });
+
+</script>
+
+
+
+</body>
+
+</html>

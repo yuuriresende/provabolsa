@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(255, 116, 36) !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container2 {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#myProgress {
+    margin-top: 25%;
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 0%;
+    height: 30px;
+    background-color: rgb(255, 116, 36);
+    text-align: center; 
+    line-height: 30px; 
+    color: white;
+  }
+
+  #myProgress2 {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar2 {
+    width: 0%;
+    height: 30px;
+    background-color: rgb(255, 116, 36);
+    text-align: center; 
+    line-height: 30px;
+    color: white;
+    margin-bottom: 2%;
+  }
+
+.bg-light{
+    background-color: #ff7424 !important;
+}
+
+  .container3{
+    max-width: 50px;
+  }
+
+  .card{
+      margin-bottom: 5%;
+  }
+
+.btn-primary{
+      background-color:grey ;
+      border-color: grey;
+  }
+  .btn-primary:hover{
+    background-color:rgb(255, 116, 36);
+    border-color: rgb(255, 116, 36);
+}
+.btn-primary:not(:disabled):not(.disabled).active{
+    background-color:rgb(255, 116, 36);
+    border-color: rgb(255, 116, 36);
+}
+
+.jubotron{
+    max-width: 90%;
+}
+
+#pct3{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#pct2{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.container5{
+    background-color: #e9ecef;
+}
+
+p{ max-width: 80%;}
