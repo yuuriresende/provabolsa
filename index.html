@@ -16,32 +16,70 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Consumer</a>
+            <a class="navbar-brand navbarlogo" href="#">Consumer</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                  </form>
             </div>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 imgcarousel" src="img/jetta.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="titulo">Novo Jetta 2020</p>
+                    <p class="subtitulo">Velocidade, estabilidade e conforto</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imgcarousel" src="img/Novo-VW-Tiguan-2019 (2).jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="titulo">Novo Tiguan 2019</p>
+                    <p class="subtitulo">Conforto e espaco para toda sua familia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imgcarousel" src="img/gte.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="titulo">Novo Golf Gte</p>
+                    <p class="subtitulo">Toda a potencia de um golf agora com motor eletrico</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     <div class="jumbotron">
         <div class="container2">
             <h1>Comparativo de Consumo</h1>
         </div>
 
         <div class="container" style="max-width: 80%;">
-            <p>Consumo: <span id="pct3">0</span></p>
+            <p class="paragrafo">Consumo: <span id="pct3">0</span></p>
 
-            <p style="margin-bottom: -17%;">Carro Eletrico</p>
+            <p class="paragrafo" style="margin-bottom: -17%;">Carro Eletrico</p>
 
             <div id="imagem">
                 <img id="img1" src="js/carro_right.png" style="margin-bottom: -40%;">
@@ -56,9 +94,9 @@
         </br>
         <div class="container" style="max-width: 80%;">
             <div id="imagem2">
-                <p>Consumo: <span id="pct2">0</span></p>
+                <p class="paragrafo">Consumo: <span id="pct2">0</span></p>
 
-                <p>Carro a Gasolina</p>
+                <p class="paragrafo">Carro a Gasolina</p>
 
                 <img id="img2" src="js/carro_right.png">
             </div>
@@ -73,7 +111,7 @@
         </div>
     </div>
 
-    <div class="container align-middle">
+    <div class="container align-middle" style="margin-bottom: 5%;">
         <div class="row">
             <div class="col-lg-12">
                 <h1>Carros comparados</h1>
@@ -87,12 +125,32 @@
                     <img class="card-img-top" src="img/golf.jpg" alt="golf tsi">
                     <div class="card-body">
                         <h5 class="card-title">Golf TSI</h5>
-                        <p class="card-text">Motor a Combustao.</p>
+                        <p class="card-text paragrafo">Motor a Combustao.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Gasolina</li>
                         <li class="list-group-item">150cv</li>
                         <li class="list-group-item">8km/L</li>
+                        <li class="list-group-item" style="justify-content: flex-end; display:flex;"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Conheca mais</button></li>
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Golf TSI 1.4</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    O Volkswagen Golf, por mais que tenha permanecido como um carro defasado por quase duas décadas dentro da gama da marca alemã no Brasil, sempre foi um dos queridinhos dos brasileiros no segmento de hatches médios. Ele chegou por aqui em 1994 e estreou sua sétima (a nível global) e atual geração Golf TSI em 2013.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </ul>
                    
                 </div>
@@ -102,12 +160,32 @@
                     <img class="card-img-top" src="img/gte.jpg" alt="golf gte">
                     <div class="card-body">
                         <h5 class="card-title">Golf Gte</h5>
-                        <p class="card-text">Motor Eletrico.</p>
+                        <p class="card-text paragrafro">Motor Eletrico.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Energia</li>
                         <li class="list-group-item">102cv</li>
                         <li class="list-group-item">+50km/L</li>
+                        <li class="list-group-item" style="justify-content: flex-end; display:flex;"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">Conheca mais</button></li>
+                        <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Golf GTE</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Depois de ter sido flagrado em maio em Fortaleza, no Ceará, e de ter passado quase dois anos desde o anúncio da chegada do carro, o Golf GTE finalmente está ns lojas. O preço? R$ 199.990. Híbrido do tipo plug-in, o modelo começará a ser vendido no dia 11 de novembro e só será vendido na cor Atlantic Blue. Ficou interessado? O teste drive só poderá ser feito em concessionárias de São Paulo, Curitiba e Brasília.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </ul>
                     
                 </div>
@@ -124,7 +202,8 @@
         </div>
 
         </br>
-        <div clas="row">
+        <div class="container">
+        <div clas="row" style="margin-bottom: 5%;">
             <div class="col-lg-12">
                 <div id="accordion">
 
@@ -170,7 +249,8 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="padding-bottom: 8%;">
+    </div>
+        <div class="container" style="padding-bottom: 8%; max-width: 86%;">
             <ul class="list-group">
                 <li class="list-group-item">Passo para fazer o calculo</li>
               
@@ -195,6 +275,7 @@
     </div> -->
 <!--js/jquery bootstrap-->
 <script src="js/jquery/jquery.min.js"></script>
+<script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script type="text/javascript">
@@ -230,6 +311,12 @@
     $("#voltarValor").click(function () {
         $("#numero").text("1");
     });
+
+    $('.carousel').carousel({
+    interval: 4000
+})
+
+
 
 </script>
 

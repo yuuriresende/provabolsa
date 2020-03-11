@@ -1,11 +1,30 @@
 body {
-    background-color: rgb(255, 116, 36) !important;
+    background-color: rgb(120, 167, 221) !important;
 }
 
 h1 {
     text-align: center;
 }
+.navbar{
+    border: 1px solid rgba(0,0,0,0.3);
+    
+}
+.navbar-light .navbar-brand
+{
+    color: gray;
+}
 
+.titulo{
+    font-size: 4vw;
+    color: grey;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+.subtitulo{ 
+    font-size: 2vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
 .container2 {
     vertical-align: middle;
     text-align: center;
@@ -20,7 +39,7 @@ h1 {
   #myBar {
     width: 0%;
     height: 30px;
-    background-color: rgb(255, 116, 36);
+    background-color: rgb(120, 167, 221);
     text-align: center; 
     line-height: 30px; 
     color: white;
@@ -34,7 +53,7 @@ h1 {
   #myBar2 {
     width: 0%;
     height: 30px;
-    background-color: rgb(255, 116, 36);
+    background-color: rgb(120, 167, 221);
     text-align: center; 
     line-height: 30px;
     color: white;
@@ -42,28 +61,36 @@ h1 {
   }
 
 .bg-light{
-    background-color: #ff7424 !important;
+    background-color: rgb(120, 167, 221) !important;
 }
 
   .container3{
     max-width: 50px;
   }
 
-  .card{
+  /* .card{
       margin-bottom: 5%;
-  }
+  } */
 
+  .btn-outline-success{
+    border-color:grey;
+    color: grey;
+  }
+.btn-outline-success:hover{
+    background-color:grey ;
+    border-color: rgb(120, 167, 221);
+}
 .btn-primary{
       background-color:grey ;
       border-color: grey;
   }
   .btn-primary:hover{
-    background-color:rgb(255, 116, 36);
-    border-color: rgb(255, 116, 36);
+    background-color:rgb(120, 167, 221);
+    border-color: rgb(120, 167, 221);
 }
 .btn-primary:not(:disabled):not(.disabled).active{
-    background-color:rgb(255, 116, 36);
-    border-color: rgb(255, 116, 36);
+    background-color:rgb(120, 167, 221);
+    border-color: rgb(120, 167, 221);
 }
 
 .jubotron{
@@ -80,8 +107,46 @@ h1 {
     font-size: 18px;
 }
 
+
 .container5{
     background-color: #e9ecef;
 }
+.form{
+    padding: 10rem;
+margin-right: 0;
+margin-left: 0;
+border-width: .2rem;
+background-color: #e9ecef;
+}
 
-p{ max-width: 80%;}
+.paragrafo{ max-width: 80%;}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 720px;
+}
+
+.imgcarousel{
+    max-height: 720px;
+    
+}
+.list-group-item-info{
+    color: #ffffff;
+    background-color: rgb(120, 167, 221);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.list-group-item:first-child{
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.card-header{
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.card-body{
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+
+

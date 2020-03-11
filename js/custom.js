@@ -11,7 +11,6 @@ var i = 0;
             var elem5 = document.getElementById("pct");
             var elem6 = document.getElementById("pct2");
 
-
             var width = 0;
             var marginLeft = 0;          
             var id = setInterval(frame, 100);
